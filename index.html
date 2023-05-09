@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-bs-theme="white">
-<head>
+<html lang="pt-br">
+  <head>
     <style>
       body {
         margin: 0;
         padding: 0;
+        max-width: 100%;
         font-family: 'Ubuntu Light', sans-serif;
         font-size: 16px;
+        overflow-x: hidden;
       }
       header {
         position: fixed;
@@ -17,12 +19,12 @@
         background-color: black;
         color: white;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        padding: 0 20px;
+        padding: 0 10%;
         box-sizing: border-box;
         z-index: 9998;
-        font-family:'Ubuntu Light', sans-serif;
+        font-family: 'Ubuntu Light', sans-serif;
       }
 
       header a {
@@ -30,7 +32,7 @@
         color: rgb(255, 255, 255);
       }
 
-      header a :hover{
+      header a:hover {
         text-decoration: none;
         color: rgb(87, 87, 87);
       }
@@ -41,16 +43,19 @@
         text-align: left;
         font-family: 'Ubuntu Light', sans-serif;
       }
+
       header nav ul {
         list-style: none;
         margin: 0;
         padding: 0;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
-        text-align: right;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
         font-family: 'Ubuntu Light', sans-serif;
       }
+
       header nav ul li {
         margin-left: 20px;
         font-family: 'Ubuntu Light', sans-serif;
@@ -63,7 +68,7 @@
         font-family: 'Ubuntu Light', sans-serif;
       }
 
-      header nav ul li a:hover{
+      header nav ul li a:hover {
         color: rgb(82, 82, 82);
         text-decoration: none;
         font-size: 18px;
@@ -71,53 +76,21 @@
       }
 
       .container-max.mx-auto.text-center h1 {
-          color: rgb(0, 0, 0);
-          font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-          font-size: 96px;
-        }
-        
+        color: rgb(0, 0, 0);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 96px;
+      }
+
       .full-width {
-          width: 100%;
-          height: 600px;
-      }
-
-
-      .flip-card {
-        background-color: transparent;
         width: 100%;
-        height: 100%;
-        perspective: 1000px;
+        height: 600px;
       }
 
-      .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
+      .div_teste {
+        background-color: rgba(255, 255, 255, 0.7);
+        z-index: 9999;
       }
 
-      .flip-card-front, .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-      }
-
-      .flip-card-front {
-        z-index: 2;
-        transform: rotateY(0deg);
-      }
-
-      .flip-card-back {
-        transform: rotateY(180deg);
-      }
-
-      .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-      }
     </style>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-J4Ph4+GZ9X6nnULnaaGprUOzK+r/OIiF6UGLAUOJvCf+QThZKTPN+9sV6j1BhY2VJgpm+wpN1/6wv44cT7J8Fw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -128,83 +101,79 @@
   <link rel="stylesheet" href="css/font-awesome-6/css/all.css" type="text/css">
 </head>
 
-<body class="bg-light">
-<!--Navegador Superior-->
+<body>
+<!-- Navegador Superior -->
 <header>
-  <div class="col">
-    <a href="#">
-    <i class="fa-brands fa-hashnode" style="color: #ffffff;"></i>
-      <h1 style="display: inline; text-align: left; margin-left: 10px;">Marcelo_Bin</h1>
-    </a>
+  <div class="row g-0 align-items-center justify-content-center" style="min-width: 80%;">
+    <div class="col-md-2 text-center">
+      <a href="#">
+        <img src="images/logo_mb.png" style="width: 25%; display: block; margin: 0 auto;">
+      </a>
+    </div>
+    <div class="col-md-10">
+      <nav>
+        <ul style="width: 100%; display: flex; justify-content:flex-end;">
+          <li><a href="#sobre">Sobre Mim</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#certificados">Certificações</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
-  <nav>
-    <ul>
-      <li><a href="#sobre">Sobre Mim</a></li>
-      <li><a href="#habilidades">Habilidades</a></li>
-      <li><a href="#certificados">Certificações</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </nav>
 </header>
 
-
 <!--Intro-->
-<div class="container-max mx-auto text-center flex align-items-center" style="padding-top: 100px; height: 600px;" id="intro">
-    <h3 class="display-6" style="color: rgb(45, 45, 45);">Seja bem vindo!</h3>
-    <div class="row">
-        <h1 style="text-align: center; ">Eu sou <br>Marcelo Bin</h1>
+<div class="container-max mx-auto text-center flex align-items-center" style="padding-top: 140px; min-height: 100vh; max-width: 80vw;" id="intro">
+  <h3 class="display-6" style="color: rgb(45, 45, 45); font-size: calc(1.5vw + 1rem);">Seja bem vindo!</h3>
+  <div class="row">
+      <h1 style="text-align: center; font-size: calc(4vw + 4rem);">Eu sou <br>Marcelo Bin</h1>
+  </div>
+  <div class="row">
+      <h3 class="display-6" style="color: rgb(45, 45, 45); padding-top: 25px; font-size: calc(1.5vw + 1rem);">Cientista de Dados | Analista de Dados</h3>
+  </div>
 
-    </div>
-    <div class="row">
-        <h3 class="display-6" style="color: rgb(45, 45, 45); padding-top: 25px;">Cientista de Dados | Analista de Dados</h3>
-    </div>
-
-    <div class="row text-center" style="padding-top: 25px;">
-        <div class="col">
-        </div>
-        <div class="col">
-            <div class="row" style="padding-top: 25px;">
-                <div class="col">
-                    <a href="mailto:marcelo.bin@hotmail.com" class="d-inline-block mx-auto"><i class="fas fa-envelope  fa-2x" style="color: #000000;"></i></a>
-                </div>
-                <div class="col">
-                    <a href="https://github.com/marcelobin" class="d-inline-block mx-auto"><i class="fab fa-github  fa-2x" style="color: #000000;"></i></a>
-                </div>
-                <div class="col">
-                    <a href="https://www.linkedin.com/in/marcelo-bin/" class="d-inline-block mx-auto"><i class="fa-brands fa-linkedin  fa-2x" style="color: #000000;"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-        </div>
-    </div>
+  <div class="row text-center" style="padding-top: 25px;">
+      <div class="col">
+      </div>
+      <div class="col">
+          <div class="row" style="padding-top: 25px;">
+              <div class="col">
+                  <a href="mailto:marcelo.bin@hotmail.com" class="d-inline-block mx-auto"><i class="fas fa-envelope fa-3x" style="color: #000000;"></i></a>
+              </div>
+              <div class="col">
+                  <a href="https://github.com/marcelobin" class="d-inline-block mx-auto"><i class="fab fa-github fa-3x" style="color: #000000;"></i></a>
+              </div>
+              <div class="col">
+                  <a href="https://www.linkedin.com/in/marcelo-bin/" class="d-inline-block mx-auto"><i class="fa-brands fa-linkedin fa-3x" style="color: #000000;"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+      </div>
+  </div>
 </div>
 
 <!--Sobre-->
-
-<div class="container-md" style="max-width: 800px; height: 600px; padding-top: 60px;" id="sobre">
-  <div class="row justify-content-center align-items-center">
-    <h1 class="text-center" style="padding-bottom: 20px;">Sobre Mim</h1>
+<div class="container-max mx-auto text-center flex align-items-center" style="min-height: 100vh; padding-top: 80px;" id="sobre">
+  <div class="row">
+    <h3 class="text-center" style="padding-bottom: 40px; font-size: 48px; font-family: 'Ubuntu';">Sobre Mim</h3>
   </div>
   <div class="row g-0 align-items-center justify-content-center">
-    <div class="col-md-2 text-center">
+    <div class="col-md-10 text-center">
       <img src="images/Foto Perfil Linkedin.jpg" class="img-fluid rounded-circle" alt="Foto de perfil" style="padding-bottom: 40px;">
     </div>
-    <div class="col-md-12">
-      <p class="text-right" style="padding-left: 10px; padding-right: 10px; text-align: justify;font-family: 'Ubuntu Light', sans-serif;">Olá, sou um verdadeiro apaixonado pela área de dados, sempre em busca de desafios e novas oportunidades na indústria da tecnologia. Com minha formação em Tecnologia em Processos Gerenciais e especialização em Data Science Aplicada pela Alura, além de estar atualmente cursando MBA em Ciência de Dados pela XPE, acumulei três anos de experiência em análise de dados.</p>
-      <p class="text-right" style="padding-left: 10px; padding-right: 10px; padding-bottom: 10px;text-align: justify;font-family: 'Ubuntu Light', sans-serif;">Tenho um domínio sólido em análise de dados e visualização de informações, utilizando ferramentas como Python, SQL, Tableau e Power BI. Desenvolvi habilidades em gestão de pessoas, negociação, atendimento ao cliente, resolução de problemas e muito mais. Minha paixão por dados e tecnologia me impulsiona a buscar continuamente novas maneiras de explorar o potencial dessas ferramentas, e estou animado para fazer parte de projetos inovadores e emocionantes na área de análise de dados.</p>
+    <div class="col-md-8">
+      <p class="text-center" style="max-width: 80%; margin: 0 auto; text-align: justify; font-family: 'Ubuntu Light', sans-serif;">Olá, sou um verdadeiro apaixonado pela área de dados, sempre em busca de desafios e novas oportunidades na indústria da tecnologia. Com minha formação em Tecnologia em Processos Gerenciais e especialização em Data Science Aplicada pela Alura, além de estar atualmente cursando MBA em Ciência de Dados pela XPE, acumulei três anos de experiência em análise de dados.</p>
+      <p class="text-center" style="max-width: 80%; margin: 0 auto; padding-bottom: 10px; text-align: justify; font-family: 'Ubuntu Light', sans-serif;">Tenho um domínio sólido em análise de dados e visualização de informações, utilizando ferramentas como Python, SQL, Tableau e Power BI. Desenvolvi habilidades em gestão de pessoas, negociação, atendimento ao cliente, resolução de problemas e muito mais. Minha paixão por dados e tecnologia me impulsiona a buscar continuamente novas maneiras de explorar o potencial dessas ferramentas, e estou animado para fazer parte de projetos inovadores e emocionantes na área de análise de dados.</p>
     </div>
   </div>
 </div>
 
-
-
-
 <!--Habilidades-->
-<div class="container-md" style="max-width: 800px; height: 600px; padding-top: 60px;" id="habilidades">
+<div class="container-max mx-auto text-center flex align-items-center" style="padding-top: 80px; min-height: 100vh; max-width: 80vw;" id="habilidades">
   <div class="row">
-    <h1 class="text-center" style="padding-bottom: 40px;">Habilidades em Ferramentas</h1>
+    <h3 class="text-center" style="padding-bottom: 40px; font-size: 48px; font-family: 'Ubuntu';">Habilidades</h3>
   </div>
   <div class="card bg-dark text-white" style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);background: linear-gradient(#151515, #666666);font-family: 'Ubuntu', sans-serif;">
       <div class="card-body">
@@ -301,9 +270,9 @@
 </div>
 
 <!--Certificações-->
-<div class="container-md" style="padding-top: 60px; height: 600px;" id="certificados">
+<div class="container-max mx-auto text-center flex align-items-center" style="padding-top: 80px; min-height: 100vh; max-width: 80vw;" id="certificados">
   <div class="row">
-    <h1 class="text-center" style="padding-bottom: 40px;">Certificações</h1>
+    <h3 class="text-center" style="padding-bottom: 40px; font-size: 48px; font-family: 'Ubuntu';">Certificações</h3>
   </div>
   <div class="row row-cols-1 row-cols-md-5 g-6">
     <div class="col">
@@ -367,9 +336,9 @@
 </div>
 
 <!--Projetos-->
-<div class="container-md" style="min-height: 600px; padding-top: 60px;" id="projetos">
+<div div class="container-max mx-auto text-center flex align-items-center" style="padding-top: 80px; min-height: 100vh; max-width: 80vw;" id="projetos">
   <div class="row">
-    <h1 class="text-center" style="padding-bottom: 40px;">Projetos</h1>
+    <h3 class="text-center" style="padding-bottom: 40px; font-size: 48px; font-family: 'Ubuntu';">Projetos</h3>
   </div>
 
   <div class="row">
@@ -389,6 +358,7 @@
     </div>
   </div>
 </div>
+
 
 <footer>
 
