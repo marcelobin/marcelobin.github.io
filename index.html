@@ -15,10 +15,11 @@
     <link rel="stylesheet" href="css/font-awesome-6/css/all.css" type="text/css">
     <style>
         body{
-            background:linear-gradient(to bottom, #22162c, #51425d);
+
+            background:linear-gradient(to bottom, #000000, #000000);
         }
         a {
-            color: white;
+            color: rgb(255, 255, 255);
         }
 
         hr{
@@ -30,23 +31,27 @@
             font-size: 18px;
             padding-top: 10px;
         }
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
 
         .col-left {
-            min-height: 100vh;
+            min-height: 90vh;
             position: sticky;
             top: 0;
-            background: rgba(255, 255, 255, .1);
+            background: rgba(0, 0, 0, 0.5);
         }
         .col-right {
             text-align: center;
-            padding: 20px;
+            padding: 10px;
         }
         .card {
             position: relative;
             background: rgba(148, 203, 255, 0.1);
             min-height: 300px;
             max-height: 500px;
-            color: white;
+            color: rgb(0, 0, 0);
             border: none;
             box-shadow: 0px 0px 10px rgba(148, 203, 255, 0); /* Valores ajustáveis para criar a sombra desejada */
         }
@@ -57,7 +62,7 @@
             left: 20px;
             font-size: 48px;
             z-index: 1;
-            color: #1c1125;
+            color: #ffffff;
         }
         .card-title{
             padding-bottom: 20px;
@@ -68,6 +73,12 @@
         .shadow-right {
             box-shadow: 0px 0px 2px rgba(255, 255, 255, .5); /* Sombra branca para a direita */
         }
+        .black-rounded-box {
+            background-color: rgba(255, 255, 255, 0.2);  /* Define a cor de fundo como preta */
+            border-radius: 10px; /* Define um raio de 10px para arredondar os cantos */
+            padding: 20px; /* Adicione preenchimento para espaçamento interno */
+            color: rgb(255, 255, 255); /* Define a cor do texto como branca (ou a cor desejada) */
+        }
 
     </style>
 
@@ -75,101 +86,98 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-2 col-12 col-left shadow-right d-md-block d-none" style="position: sticky; top: 0; max-height:100vh; min-width: 300px;">
+            <div class="col-md-2 col-12 col-left d-md-block d-none black-rounded-box" style="position: sticky; top: 0; max-height:98vh; min-width: 300px; margin-left:10px; margin-top:10px; margin-bottom:10px">
                 <div>
                     <img src="images/Foto Perfil Linkedin.jpg" class="img-fluid rounded-circle" alt="Foto de perfil" style="padding: 55px; height: 25%;">
                 </div>
-                <p style="text-align: center; font-family: 'Ubuntu', sans-serif; color:white; font-size: 36px; font-weight: bold;">Marcelo Bin</p>
-                <p style="text-align: center; font-family: 'Ubuntu', sans-serif; color: white; width: 100%; white-space: nowrap; font-size: 1vw;">Cientista de Dados | Analista de Dados</p>
+                <p style="text-align: center; font-family: 'Ubuntu', sans-serif; font-size: 36px; font-weight: bold;">Marcelo Bin</p>
+                <p style="text-align: center; font-family: 'Ubuntu', sans-serif; width: 100%; white-space: nowrap; font-size: 1vw;">Cientista de Dados | Analista de Dados</p>
 
-                <hr style="color: whitesmoke;">
+                <hr style="color: rgb(255, 255, 255)">
     
                 <div class="row text-center flex align-items-center" style="padding-top: 25px;">
     
                     <div class="col">
-                        <a href="mailto:marcelo.bin@hotmail.com" class="d-inline-block mx-auto"><i class="fas fa-envelope fa-2x" style="color: #ffffff;"></i></a>
+                        <a href="mailto:marcelo.bin@hotmail.com" class="d-inline-block mx-auto"><i class="fas fa-envelope fa-2x" style="color:  rgb(255, 255, 255);"></i></a>
                     </div>
                     <div class="col">
-                        <a href="https://github.com/marcelobin" target="_blank" class="d-inline-block mx-auto"><i class="fab fa-github fa-2x" style="color: #ffffff;"></i></a>
+                        <a href="https://github.com/marcelobin" target="_blank" class="d-inline-block mx-auto"><i class="fab fa-github fa-2x" style="color: rgb(255, 255, 255);"></i></a>
                     </div>
                     <div class="col">
-                        <a href="https://www.linkedin.com/in/marcelo-bin/" target="_blank" class="d-inline-block mx-auto"><i class="fab fa-linkedin fa-2x" style="color: #ffffff;"></i></a>
+                        <a href="https://www.linkedin.com/in/marcelo-bin/" target="_blank" class="d-inline-block mx-auto"><i class="fab fa-linkedin fa-2x" style="color: rgb(255, 255, 255);"></i></a>
                     </div>
                     <div class="col">
-                        <a href="docs/Marcelo Bin Resende da Silva - CV .pdf" target="_blank" class="d-inline-block mx-auto"><i class="fas fa-file-invoice fa-2x" style="color: #ffffff;"></i></a>
+                        <a href="docs/Marcelo Bin Resende da Silva - CV .pdf" target="_blank" class="d-inline-block mx-auto"><i class="fas fa-file-invoice fa-2x" style="color: rgb(255, 255, 255);"></i></a>
                     </div>
                 </div>
                 <div style="position: absolute; bottom: 0; left: 0; width: 100%;">
-                    <p style="color: whitesmoke; padding-top:20px; padding-left:20px"; font-size:12px><em>"Eu não falhei. Apenas descobri 10 mil maneiras que não funcionam"</em></p>
-                    <p style="color: whitesmoke;padding-left:20px"; font-size:12px">Thomas Edison</p> 
+                    <p style="padding-top:20px; padding-left:20px"; font-size:12px><em>"Eu não falhei. Apenas descobri 10 mil maneiras que não funcionam"</em></p>
+                    <p style=";padding-left:20px"; font-size:12px">Thomas Edison</p> 
                 </div>
             </div>
             <!-- Coluna à esquerda - visível apenas em telas menores -->
-            <div class="col-12 col-left d-block d-md-none" style="position: relative; text-align: center">
+            <div class="col-12 col-left d-block d-md-none black-rounded-box" style="position: relative; text-align: center">
                 <div class="mx-auto"> <!-- Centraliza horizontalmente o conteúdo -->
                     <img src="images/Foto Perfil Linkedin.jpg" class="img-fluid rounded-circle" alt="Foto de perfil" style="padding: 55px; height: 25%;">
-                    <p style="text-align: center; font-family: 'Ubuntu', sans-serif; color:white; font-size: 36px; font-weight: bold;">Marcelo Bin</p>
-                    <p style="text-align: center; font-family: 'Ubuntu', sans-serif; color:white">Cientista de Dados | Analista de Dados</p>
-                    <hr style="color: whitesmoke;">
+                    <p style="text-align: center; font-family: 'Ubuntu', sans-serif; font-size: 36px; font-weight: bold;">Marcelo Bin</p>
+                    <p style="text-align: center; font-family: 'Ubuntu', sans-serif;">Cientista de Dados | Analista de Dados</p>
+                    <hr">
 
                     <div class="row text-center flex align-items-center" style="padding-top: 25px; justify-content: center;"> <!-- Centraliza horizontalmente os ícones -->
                         <div class="col">
-                            <a href="mailto:marcelo.bin@hotmail.com" class="d-inline-block mx-auto"><i class="fas fa-envelope fa-2x" style="color: #ffffff;"></i></a>
+                            <a href="mailto:marcelo.bin@hotmail.com" class="d-inline-block mx-auto"><i class="fas fa-envelope fa-2x" style="color: rgb(255, 255, 255);"></i></a>
                         </div>
                         <div class="col">
-                            <a href="https://github.com/marcelobin" target="_blank" class="d-inline-block mx-auto"><i class="fab fa-github fa-2x" style="color: #ffffff;"></i></a>
+                            <a href="https://github.com/marcelobin" target="_blank" class="d-inline-block mx-auto"><i class="fab fa-github fa-2x" style="color:  rgb(255, 255, 255);"></i></a>
                         </div>
                         <div class="col">
-                            <a href="https://www.linkedin.com/in/marcelo-bin/" target="_blank" class="d-inline-block mx-auto"><i class="fab fa-linkedin fa-2x" style="color: #ffffff;"></i></a>
+                            <a href="https://www.linkedin.com/in/marcelo-bin/" target="_blank" class="d-inline-block mx-auto"><i class="fab fa-linkedin fa-2x" style="color:  rgb(255, 255, 255);"></i></a>
                         </div>
                         <div class="col">
-                            <a href="docs/Marcelo Bin Resende da Silva - CV .pdf" target="_blank" class="d-inline-block mx-auto"><i class="fas fa-file-invoice fa-2x" style="color: #ffffff;"></i></a>
+                            <a href="docs/Marcelo Bin Resende da Silva - CV .pdf" target="_blank" class="d-inline-block mx-auto"><i class="fas fa-file-invoice fa-2x" style="color:  rgb(255, 255, 255);"></i></a>
                         </div>
                     </div>
-                    <p style="color: whitesmoke; padding-top:60px"><em>"Eu não falhei. Apenas descobri 10 mil maneiras que não funcionam"</em></p>
-                <p style="color: whitesmoke;">Thomas Edison</p> 
+                    <p style="padding-top:60px"><em>"Eu não falhei. Apenas descobri 10 mil maneiras que não funcionam"</em></p>
+                <p>Thomas Edison</p> 
                 </div>
             </div>
 
 
-            <div class="col-md-8 col-12 col-right text-center mx-auto">
-                <h1 style="color: aliceblue; padding-bottom:30px; padding-top:30px;"><strong>Cursos e Especializações</strong></h1>
-                <div class="col-md-8 col-12 mb-4 mx-auto" style="text-align: left;">
+            <div class="col-md-8 col-12 col-right text-center mx-auto col-xxl-9">
+               <div class="row black-rounded-box" style="text-align: left;">
+                <h1 style="padding-bottom:30px; padding-top:30px;"><strong>Cursos e Especializações</strong></h1>
+                
                     <ul class="list-unstyled text-left"> <!-- Use a classe list-unstyled para remover os estilos de lista padrão e alinhar o texto à esquerda -->
                         <li>
-                            <i class="fas fa-certificate" style="color: #e9dbf5;"></i> 
-                            <a href="https://www.credly.com/badges/37aaa804-81c5-4131-8b6d-3d40afa91580/linked_in_profile" target="_blank" style="color: aliceblue; text-decoration: none;"><strong> Data Science Professional Certificate</strong> | Coursera - IBM</a>
+                            <i class="fas fa-certificate" style="color: #d18c01;"></i> 
+                            <a href="https://www.credly.com/badges/37aaa804-81c5-4131-8b6d-3d40afa91580/linked_in_profile" target="_blank" style="text-decoration: none;"><strong> Data Science Professional Certificate</strong> | Coursera - IBM</a>
                         </li>
                         <li>
-                            <i class="fas fa-certificate" style="color: #e9dbf5;"></i> 
-                            <a href="https://www.datacamp.com/certificate/DSA0012752983830#" target="_blank" style="color: aliceblue; text-decoration: none;"><strong>Data Scientist Associate Certificate </strong>| Datacamp</a>
+                            <i class="fas fa-certificate" style="color: #d18c01;"></i> 
+                            <a href="https://www.datacamp.com/certificate/DSA0012752983830#" target="_blank" style="text-decoration: none;"><strong>Data Scientist Associate Certificate </strong>| Datacamp</a>
                         </li>
                         <li>
-                            <i class="fas fa-certificate" style="color: #e9dbf5;"></i> 
-                            <a href="https://github.com/marcelobin/Certificados/blob/main/Certificado%20BootCamp%20-%20Arquiteto%20de%20Dados.png" target="_blank" style="color: aliceblue; text-decoration: none;"><strong>Bootcamp - Arquiteto de Dados</strong> | XP Educação - IGTI</a>
+                            <i class="fas fa-certificate" style="color: #d18c01;"></i> 
+                            <a href="https://github.com/marcelobin/Certificados/blob/main/Certificado%20BootCamp%20-%20Arquiteto%20de%20Dados.png" target="_blank" style="text-decoration: none;"><strong>Bootcamp - Arquiteto de Dados</strong> | XP Educação - IGTI</a>
                         </li>
                         <li>
-                            <i class="fas fa-certificate" style="color: #e9dbf5;"></i> 
-                            <a href="https://cursos.alura.com.br/degree/certificate/d7a5a3ae-660d-43cf-b5f0-e1357dc74222" target="_blank" style="color: aliceblue; text-decoration: none;"><strong>Formação Python para Data Science</strong> | Alura</a>
+                            <i class="fas fa-certificate" style="color:#d18c01;"></i> 
+                            <a href="https://cursos.alura.com.br/degree/certificate/d7a5a3ae-660d-43cf-b5f0-e1357dc74222" target="_blank" style="text-decoration: none;"><strong>Formação Python para Data Science</strong> | Alura</a>
                         </li>
                         <li>
-                            <i class="fas fa-certificate" style="color: #e9dbf5;"></i> 
-                            <a href="https://www.credly.com/badges/5a9b8d5c-d7bf-4030-9c5a-6219144b3845?source=linked_in_profile" target="_blank" style="color: aliceblue; text-decoration: none;"><strong>Análise de Dados do Google</strong> | Coursera - Google</a>
+                            <i class="fas fa-certificate" style="color:#d18c01;"></i> 
+                            <a href="https://www.credly.com/badges/5a9b8d5c-d7bf-4030-9c5a-6219144b3845?source=linked_in_profile" target="_blank" style="text-decoration: none;"><strong>Análise de Dados do Google</strong> | Coursera - Google</a>
                         </li>
                         <li style="padding-bottom: 20px;">
-                            <i class="fas fa-certificate" style="color: #e9dbf5;"></i> 
-                            <a href="https://cursos.alura.com.br/degree/certificate/e10a9ee3-6988-42df-9363-2ee9a89e6c3b" target="_blank" style="color: aliceblue; text-decoration: none;"><strong>Formação Python</strong> | Alura</a>
+                            <i class="fas fa-certificate" style="color: #d18c01;"></i> 
+                            <a href="https://cursos.alura.com.br/degree/certificate/e10a9ee3-6988-42df-9363-2ee9a89e6c3b" target="_blank" style="text-decoration: none;"><strong>Formação Python</strong> | Alura</a>
                         </li>
                     </ul>
-                </div>
-                <hr>
-                
-
-                <h1 style="color: aliceblue; padding-bottom:30px; padding-top:30px;"><strong>Projetos</strong></h1>
-                <div class="row">
+              
+                <h1 style="padding-bottom:30px; padding-top:30px;"><strong>Projetos</strong></h1>
                     <!-- Primeiro Card -->
-                    <div class="col-md-5 col-12 mb-4 mx-auto">
-                        <i class="fa-solid fa-house fa-2xs card-icon" style="top: 20px; left: 0px; font-size: 48px; z-index: 1; color: #e9dbf5;"></i>
+                    <div class="col-md-5 col-12 mb-4 mx-auto" style="align-content: space-between;">
+                        <i class="fa-solid fa-house fa-2xs card-icon" style="top: 20px; left: 0px; font-size: 48px; z-index: 1; color: #ffffff;"></i>
                         <div class="card">
                             <a href="https://github.com/marcelobin/Analise_mercado_imobiliario" target="_blank" style="text-decoration: none;">
                                 <div class="card-body">
@@ -182,44 +190,44 @@
                     
                     <!-- Segundo Card -->
                     <div class="col-md-5 col-12 mb-4 mx-auto">
-                        <i class="fa-solid fa-rocket fa-2xs card-icon" style="top: 20px; left: 0px; font-size: 48px; z-index: 1; color: #e9dbf5;"></i>
+                        <i class="fa-solid fa-rocket fa-2xs card-icon" style="top: 20px; left: 0px; font-size: 48px; z-index: 1; color: #ffffff;"></i>
                         <div class="card">
+                            <a href="https://github.com/marcelobin/Space_Y" target="_blank" style="text-decoration: none;">
                             <div class="card-body">
                                 <h5 class="card-title">Estudo de Caso: Análise de Dados sobre Lançamentos da Falcon 9 da SpaceX.</h5>
                                 <p class="card-text">O objetivo deste projeto é realizar uma análise completa dos dados de lançamentos da Falcon 9 da SpaceX, utilizando técnicas de análise de dados e machine learning para obter insights e prever o sucesso ou fracasso dos lançamentos.</p>
                             </div>
+                            </a>
                         </div>
                     </div>
                     <!-- Fim do Segundo Card -->
                     
-                <hr>
-                </div>
                     <!-- Início da seção de histórico profissional -->
-                <h1 style="color: aliceblue; padding-bottom:30px; padding-top:30px;"><strong>Histórico Profissional</strong></h1>
-                
+                <h1 style="padding-bottom:30px; padding-top:30px;"><strong>Histórico Profissional</strong></h1>
+
                 <!-- Primeiro cargo -->
-                <div class="col-md-10 col-12 mb-4 mx-auto" style="text-align: left;color:whitesmoke; padding-bottom:20px">
+                <div class="col-md-11 col-12 mb-4 mx-auto" style="text-align: left;padding-bottom:20px; padding-top:20px">
                     <h5><strong>Analista de Dados</strong></h5>
                     <p><strong>Desde Janeiro de 2021</strong></p>
                     <p>Análise de dados para gerar insights para o negócio. Utilização SQL e Python (Pandas e Numpy) para consultas e tratamentos em Banco de Dados. Criação de Dashboards interativos utilizando o Plotly e Dash para auxiliar em análises gerenciais, além de relatórios com gráficos gerados a partir do Matplotlib e Seaborn.</p>
                 </div>
                 
                 <!-- Segundo cargo -->
-                <div class="col-md-10 col-12 mb-4 mx-auto" style="text-align: left;color:whitesmoke; padding-bottom:20px">
+                <div class="col-md-11 col-12 mb-4 mx-auto" style="text-align: left;padding-bottom:20px">
                     <h5><strong>Gerente de Relacionamento</strong></h5>
                     <p><strong>Maio de 2018 - Outubro de 2020</strong></p>
                     <p>Gerenciamento de carteira de aproximadamente 500 clientes PF e PJ, onde pude desenvolver e aplicar técnicas comerciais, negociação e relacionamento com clientes. Analisando e entendendo as necessidades de cada cliente para apresentar a melhor solução financeira para seu momento.</p>
                 </div>
                 
                 <!-- Terceiro cargo -->
-                <div class="col-md-10 col-12 mb-4 mx-auto" style="text-align: left;color:whitesmoke; padding-bottom:20px">
+                <div class="col-md-11 col-12 mb-4 mx-auto" style="text-align: left;padding-bottom:20px">
                     <h5><strong>Gerente de Filial</strong></h5>
                     <p><strong>Julho de 2008 - Dezembro de 2017</strong></p>
                     <p>Gestão comercial e administrativa de empresa correspondente bancário. Nesse período desenvolvi habilidades como Negociação, Gestão de Pessoas e Empreendedorismo, sempre com visão de gerar valor ao negócio.</p>
                 </div>
                 
                 <!-- Quarto cargo -->
-                <div class="col-md-10 col-12 mb-4 mx-auto" style="text-align: left;color:whitesmoke; padding-bottom:20px">
+                <div class="col-md-11 col-12 mb-4 mx-auto" style="text-align: left;padding-bottom:20px">
                     <h5><strong>Subgerente</strong></h5>
                     <p><strong>Março de 2001 - Junho de 2008</strong></p>
                     <p>Empresa onde tive oportunidade de iniciar minha atividade profissional e me proporcionou grandes aprendizados. Nela exerci tanto cargos administrativos (que me proporcionou desenvolver habilidades de controle e gerenciamento) quanto cargos comerciais, voltado ao relacionamento, trabalho em equipe e vendas.</p>
