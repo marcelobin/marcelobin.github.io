@@ -20,6 +20,17 @@
         a {
             color: white;
         }
+
+        hr{
+            color: whitesmoke;
+            box-shadow: 0px 0px 10px rgba(148, 203, 255, 0.1);
+        }
+
+        li{
+            font-size: 18px;
+            padding-top: 10px;
+        }
+
         .col-left {
             min-height: 100vh;
             
@@ -37,7 +48,7 @@
             max-height: 500px;
             color: white;
             border: none;
-            box-shadow: 0px 0px 10px rgba(148, 203, 255, 0.1); /* Valores ajustáveis para criar a sombra desejada */
+            box-shadow: 0px 0px 10px rgba(148, 203, 255, 0); /* Valores ajustáveis para criar a sombra desejada */
         }
         .card-icon {
             position: relative;
@@ -54,6 +65,9 @@
         .card-text{
             text-align: justify;
         }
+        .shadow-right {
+            box-shadow: 0px 0px 2px rgba(255, 255, 255, .5); /* Sombra branca para a direita */
+        }
 
     </style>
 
@@ -61,12 +75,13 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-2 col-12 col-left d-md-block d-none">
+            <div class="col-md-2 col-12 col-left shadow-right d-md-block d-none">
                 <div>
                     <img src="images/Foto Perfil Linkedin.jpg" class="img-fluid rounded-circle" alt="Foto de perfil" style="padding: 55px; height: 25%;">
                 </div>
                 <p style="text-align: center; font-family: 'Ubuntu', sans-serif; color:white; font-size: 36px; font-weight: bold;">Marcelo Bin</p>
-                <p style="text-align: center; font-family: 'Ubuntu', sans-serif; color:white">Cientista de Dados | Analista de Dados</p>
+                <p style="text-align: center; font-family: 'Ubuntu', sans-serif; color: white; width: 100%; white-space: nowrap; font-size: .85vw;">Cientista de Dados | Analista de Dados</p>
+
                 <hr style="color: whitesmoke;">
     
                 <div class="row text-center flex align-items-center" style="padding-top: 25px;">
@@ -84,6 +99,8 @@
                         <a href="docs/Marcelo Bin Resende da Silva - CV .pdf" target="_blank" class="d-inline-block mx-auto"><i class="fas fa-file-invoice fa-2x" style="color: #ffffff;"></i></a>
                     </div>
                 </div>
+                <p style="color: whitesmoke; padding-top:20px"><em>"Eu não falhei. Apenas descobri 10 mil maneiras que não funcionam"</em></p>
+                <p style="color: whitesmoke;">Thomas Edison</p> 
             </div>
             <!-- Coluna à esquerda - visível apenas em telas menores -->
             <div class="col-12 col-left d-block d-md-none" style="position: relative; text-align: center">
@@ -107,15 +124,45 @@
                             <a href="docs/Marcelo Bin Resende da Silva - CV .pdf" target="_blank" class="d-inline-block mx-auto"><i class="fas fa-file-invoice fa-2x" style="color: #ffffff;"></i></a>
                         </div>
                     </div>
+                    <p style="color: whitesmoke; padding-top:50px"><em>"Eu não falhei. Apenas descobri 10 mil maneiras que não funcionam"</em></p>
+                <p style="color: whitesmoke;">Thomas Edison</p> 
                 </div>
             </div>
 
 
-            <div class="col-md-10 col-12 col-right">
-                <h1 style="color: aliceblue; padding-bottom:30px">Projetos</h1>
+            <div class="col-md-10 col-12 col-right text-center">
+                <h1 style="color: aliceblue; padding-bottom:30px; padding-top:30px;">Cursos e Especializações</h1>
+                <div class="col-md-7 col-12 mb-4 mx-auto" style="text-align: left;">
+                    <ul class="list-unstyled text-left"> <!-- Use a classe list-unstyled para remover os estilos de lista padrão e alinhar o texto à esquerda -->
+                        <li>
+                            <i class="fas fa-certificate" style="color: #e9dbf5;"></i> 
+                            <a href="https://www.credly.com/badges/37aaa804-81c5-4131-8b6d-3d40afa91580/linked_in_profile" target="_blank" style="color: aliceblue; text-decoration: none;"><strong> Data Science Professional Certificate</strong> | Coursera - IBM</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-certificate" style="color: #e9dbf5;"></i> 
+                            <a href="https://www.datacamp.com/certificate/DSA0012752983830#" target="_blank" style="color: aliceblue; text-decoration: none;"><strong>Data Scientist Associate Certificate </strong>| Datacamp</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-certificate" style="color: #e9dbf5;"></i> 
+                            <a href="https://cursos.alura.com.br/degree/certificate/d7a5a3ae-660d-43cf-b5f0-e1357dc74222" target="_blank" style="color: aliceblue; text-decoration: none;"><strong>Formação Python para Data Science</strong> | Alura</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-certificate" style="color: #e9dbf5;"></i> 
+                            <a href="https://www.credly.com/badges/5a9b8d5c-d7bf-4030-9c5a-6219144b3845?source=linked_in_profile" target="_blank" style="color: aliceblue; text-decoration: none;"><strong>Análise de Dados do Google</strong> | Coursera - Google</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-certificate" style="color: #e9dbf5;"></i> 
+                            <a href="https://cursos.alura.com.br/degree/certificate/e10a9ee3-6988-42df-9363-2ee9a89e6c3b" target="_blank" style="color: aliceblue; text-decoration: none;"><strong>Formação Python</strong> | Alura</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+                
+
+                <h1 style="color: aliceblue; padding-bottom:30px; padding-top:30px;">Projetos</h1>
                 <div class="row">
                     <!-- Primeiro Card -->
-                    <div class="col-md-4 col-12 mb-4">
+                    <div class="col-md-5 col-12 mb-4 mx-auto">
                         <i class="fa-solid fa-house fa-2xs card-icon" style="top: 20px; left: 0px; font-size: 48px; z-index: 1; color: #e9dbf5;"></i>
                         <div class="card">
                             <a href="https://github.com/marcelobin/Analise_mercado_imobiliario" target="_blank" style="text-decoration: none;">
@@ -128,7 +175,7 @@
                     </div>
                     
                     <!-- Segundo Card -->
-                    <div class="col-md-4 col-12 mb-4">
+                    <div class="col-md-5 col-12 mb-4 mx-auto">
                         <i class="fa-solid fa-rocket fa-2xs card-icon" style="top: 20px; left: 0px; font-size: 48px; z-index: 1; color: #e9dbf5;"></i>
                         <div class="card">
                             <div class="card-body">
