@@ -33,9 +33,9 @@
 
         .col-left {
             min-height: 100vh;
-            
             position: sticky;
             top: 0;
+            background: rgba(255, 255, 255, .1);
         }
         .col-right {
             text-align: center;
@@ -75,7 +75,7 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-2 col-12 col-left shadow-right d-md-block d-none">
+            <div class="col-md-2 col-12 col-left shadow-right d-md-block d-none" style="position: sticky; top: 0; max-height:100vh">
                 <div>
                     <img src="images/Foto Perfil Linkedin.jpg" class="img-fluid rounded-circle" alt="Foto de perfil" style="padding: 55px; height: 25%;">
                 </div>
@@ -99,8 +99,10 @@
                         <a href="docs/Marcelo Bin Resende da Silva - CV .pdf" target="_blank" class="d-inline-block mx-auto"><i class="fas fa-file-invoice fa-2x" style="color: #ffffff;"></i></a>
                     </div>
                 </div>
-                <p style="color: whitesmoke; padding-top:20px"><em>"Eu não falhei. Apenas descobri 10 mil maneiras que não funcionam"</em></p>
-                <p style="color: whitesmoke;">Thomas Edison</p> 
+                <div style="position: absolute; bottom: 0; left: 0; width: 100%;">
+                    <p style="color: whitesmoke; padding-top:20px; padding-left:20px"; font-size:12px><em>"Eu não falhei. Apenas descobri 10 mil maneiras que não funcionam"</em></p>
+                    <p style="color: whitesmoke;padding-left:20px"; font-size:12px">Thomas Edison</p> 
+                </div>
             </div>
             <!-- Coluna à esquerda - visível apenas em telas menores -->
             <div class="col-12 col-left d-block d-md-none" style="position: relative; text-align: center">
@@ -131,7 +133,7 @@
 
 
             <div class="col-md-10 col-12 col-right text-center">
-                <h1 style="color: aliceblue; padding-bottom:30px; padding-top:30px;">Cursos e Especializações</h1>
+                <h1 style="color: aliceblue; padding-bottom:30px; padding-top:30px;"><strong>Cursos e Especializações</strong></h1>
                 <div class="col-md-7 col-12 mb-4 mx-auto" style="text-align: left;">
                     <ul class="list-unstyled text-left"> <!-- Use a classe list-unstyled para remover os estilos de lista padrão e alinhar o texto à esquerda -->
                         <li>
@@ -150,7 +152,7 @@
                             <i class="fas fa-certificate" style="color: #e9dbf5;"></i> 
                             <a href="https://www.credly.com/badges/5a9b8d5c-d7bf-4030-9c5a-6219144b3845?source=linked_in_profile" target="_blank" style="color: aliceblue; text-decoration: none;"><strong>Análise de Dados do Google</strong> | Coursera - Google</a>
                         </li>
-                        <li>
+                        <li style="padding-bottom: 20px;">
                             <i class="fas fa-certificate" style="color: #e9dbf5;"></i> 
                             <a href="https://cursos.alura.com.br/degree/certificate/e10a9ee3-6988-42df-9363-2ee9a89e6c3b" target="_blank" style="color: aliceblue; text-decoration: none;"><strong>Formação Python</strong> | Alura</a>
                         </li>
@@ -159,7 +161,7 @@
                 <hr>
                 
 
-                <h1 style="color: aliceblue; padding-bottom:30px; padding-top:30px;">Projetos</h1>
+                <h1 style="color: aliceblue; padding-bottom:30px; padding-top:30px;"><strong>Projetos</strong></h1>
                 <div class="row">
                     <!-- Primeiro Card -->
                     <div class="col-md-5 col-12 mb-4 mx-auto">
