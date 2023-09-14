@@ -16,7 +16,7 @@
     <style>
         body{
 
-            background:linear-gradient(to bottom, #000000, #000000);
+            background:black;
         }
         a {
             color: rgb(255, 255, 255);
@@ -74,11 +74,13 @@
             box-shadow: 0px 0px 2px rgba(255, 255, 255, .5); /* Sombra branca para a direita */
         }
         .black-rounded-box {
-            background-color: rgba(255, 255, 255, 0.2);  /* Define a cor de fundo como preta */
+            background: rgba(0, 187, 255, 0.1);  /* Cor de fundo preto com 50% de transparência */
             border-radius: 10px; /* Define um raio de 10px para arredondar os cantos */
             padding: 20px; /* Adicione preenchimento para espaçamento interno */
             color: rgb(255, 255, 255); /* Define a cor do texto como branca (ou a cor desejada) */
         }
+        
+        
 
     </style>
 
@@ -146,34 +148,45 @@
             <div class="col-md-8 col-12 col-right text-center mx-auto col-xxl-9">
                <div class="row black-rounded-box" style="text-align: left;">
                 <h1 style="padding-bottom:30px; padding-top:30px;"><strong>Cursos e Especializações</strong></h1>
-                
-                    <ul class="list-unstyled text-left"> <!-- Use a classe list-unstyled para remover os estilos de lista padrão e alinhar o texto à esquerda -->
+                <div class="col-md-6">
+                    <ul class="list-unstyled text-left">
                         <li>
-                            <i class="fas fa-certificate" style="color: #d18c01;"></i> 
-                            <a href="https://www.credly.com/badges/37aaa804-81c5-4131-8b6d-3d40afa91580/linked_in_profile" target="_blank" style="text-decoration: none;"><strong> Data Science Professional Certificate</strong> | Coursera - IBM</a>
+                            <i class="fas fa-certificate" style="color: #d18c01;"></i>
+                            <a href="https://www.credly.com/badges/37aaa804-81c5-4131-8b6d-3d40afa91580/linked_in_profile" target="_blank" style="text-decoration: none;"><strong>Data Science Professional Certificate</strong> | Coursera - IBM</a>
                         </li>
                         <li>
-                            <i class="fas fa-certificate" style="color: #d18c01;"></i> 
-                            <a href="https://www.datacamp.com/certificate/DSA0012752983830#" target="_blank" style="text-decoration: none;"><strong>Data Scientist Associate Certificate </strong>| Datacamp</a>
+                            <i class="fas fa-certificate" style="color: #d18c01;"></i>
+                            <a href="https://www.datacamp.com/certificate/DSA0012752983830#" target="_blank" style="text-decoration: none;"><strong>Data Scientist Associate Certificate</strong> | Datacamp</a>
                         </li>
                         <li>
-                            <i class="fas fa-certificate" style="color: #d18c01;"></i> 
+                            <i class="fas fa-certificate" style="color: #d18c01;"></i>
                             <a href="https://github.com/marcelobin/Certificados/blob/main/Certificado%20BootCamp%20-%20Arquiteto%20de%20Dados.png" target="_blank" style="text-decoration: none;"><strong>Bootcamp - Arquiteto de Dados</strong> | XP Educação - IGTI</a>
                         </li>
+                    </ul>
+                </div>
+                <!-- Segunda coluna -->
+                <div class="col-md-6">
+                    <ul class="list-unstyled text-left">
                         <li>
-                            <i class="fas fa-certificate" style="color:#d18c01;"></i> 
+                            <i class="fas fa-certificate" style="color:#d18c01;"></i>
                             <a href="https://cursos.alura.com.br/degree/certificate/d7a5a3ae-660d-43cf-b5f0-e1357dc74222" target="_blank" style="text-decoration: none;"><strong>Formação Python para Data Science</strong> | Alura</a>
                         </li>
                         <li>
-                            <i class="fas fa-certificate" style="color:#d18c01;"></i> 
+                            <i class="fas fa-certificate" style="color:#d18c01;"></i>
                             <a href="https://www.credly.com/badges/5a9b8d5c-d7bf-4030-9c5a-6219144b3845?source=linked_in_profile" target="_blank" style="text-decoration: none;"><strong>Análise de Dados do Google</strong> | Coursera - Google</a>
                         </li>
                         <li style="padding-bottom: 20px;">
-                            <i class="fas fa-certificate" style="color: #d18c01;"></i> 
+                            <i class="fas fa-certificate" style="color: #d18c01;"></i>
                             <a href="https://cursos.alura.com.br/degree/certificate/e10a9ee3-6988-42df-9363-2ee9a89e6c3b" target="_blank" style="text-decoration: none;"><strong>Formação Python</strong> | Alura</a>
                         </li>
                     </ul>
-              
+                </div>
+            </div>
+            
+
+               <div style="padding:20px"></div>
+
+               <div class="row black-rounded-box" style="text-align: left;">
                 <h1 style="padding-bottom:30px; padding-top:30px;"><strong>Projetos</strong></h1>
                     <!-- Primeiro Card -->
                     <div class="col-md-5 col-12 mb-4 mx-auto" style="align-content: space-between;">
@@ -187,7 +200,7 @@
                             </a>
                         </div>
                     </div>
-                    
+               
                     <!-- Segundo Card -->
                     <div class="col-md-5 col-12 mb-4 mx-auto">
                         <i class="fa-solid fa-rocket fa-2xs card-icon" style="top: 20px; left: 0px; font-size: 48px; z-index: 1; color: #ffffff;"></i>
@@ -201,7 +214,11 @@
                         </div>
                     </div>
                     <!-- Fim do Segundo Card -->
-                    
+               </div>
+
+               <div style="padding:20px"></div>
+
+               <div class="row black-rounded-box" style="text-align: left;">
                     <!-- Início da seção de histórico profissional -->
                 <h1 style="padding-bottom:30px; padding-top:30px;"><strong>Histórico Profissional</strong></h1>
 
@@ -234,7 +251,8 @@
                 </div>
                 <!-- Fim da seção de histórico profissional -->
             </div>
-        </div>
+        </div>   
+
     </div>
 </body>
 </html>
