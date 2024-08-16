@@ -8,8 +8,8 @@
 }
 
 body {
-    background: #081b29;
-    color: #ededed;
+    background: #081b29 !important;
+    color: #ededed !important;
 }
 
 .header{
@@ -25,6 +25,11 @@ body {
     z-index: 100;;
 }
 
+.header.scrolled {
+    background-color: #081b29 ; /* Exemplo de mudança de cor de fundo */
+    transition: background-color ease 1s;
+}
+
 .logo {
     position: relative;
     font-size: 25px;
@@ -32,6 +37,20 @@ body {
     text-decoration: none;
     font-weight: 600;
 }
+
+.logo-no-animation {
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo-no-animation:hover {
+    color: #00abf0;
+    text-decoration: none;
+}
+
 
 .logo::before{
     content: '';
@@ -43,6 +62,12 @@ body {
     background: #081b29;
     animation: showRight 1s ease forwards;
     animation-delay: .4s;
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: #00abf0;
+    text-decoration: none;
 }
 
 .navbar a {
@@ -66,6 +91,24 @@ body {
     display: flex;
     align-items: center;
     padding: 0 10%;
+}
+
+.home.no-background {
+    height: 100vh;
+    background: none;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    flex-direction: column;
+}
+.home.no-background .home-content h1 {
+    text-align: center !important;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .home-content {
@@ -241,6 +284,7 @@ body {
 
 .home-sci a:hover {
     color: #00abf0;
+    text-decoration: none;
 }
 
 
@@ -299,6 +343,111 @@ body {
     z-index: 100;
 }
 
+.card-text {
+    width: 70%;
+    text-align: left;
+}
+
+/* Adicionando espaçamento entre os tópicos */
+.curriculo-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #00abf0;
+}
+
+.curriculo-subtitle {
+    font-size: 20px;
+    color: #ededed;
+    margin-bottom: 10px;
+}
+
+.curriculo-text {
+    font-size: 16px;
+    color: #ededed;
+    margin-bottom: 10px;
+}
+
+.curriculo-list {
+    margin-bottom: 20px;
+}
+
+/* Ajustando o alinhamento da linha e dos círculos na timeline */
+.timeline {
+    position: relative;
+    padding-left: 21px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 2px;
+    height: 100%;
+    background: #00abf0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    background: #00abf0;
+    border-radius: 50%;
+}
+
+/* Destaque dos nomes das empresas e faculdades */
+.timeline-item h4 {
+    margin-bottom: 5px;
+    color: #319cca; /* Cor destacada */
+    font-weight: bold;
+}
+
+/* Melhorando os marcadores das descrições das atividades */
+.curriculo-list {
+    margin-bottom: 20px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.curriculo-list i {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #00abf0;
+    vertical-align: middle;
+}
+
+.curriculo-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ededed;
+}
+
+.curriculo-list li:hover i {
+    color: #319cca;
+}
+
+/* Estilo para o efeito de hover nos cards */
+.card-hover {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-hover:hover {
+    transform: scale(1.05);
+}
 
 /*KEYFRAMES ANIMATION*/
 

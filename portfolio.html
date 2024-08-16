@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marcelo Bin - Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="icon" href="images/logo_marcelo.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo-no-animation">Marcelo Bin.</a>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="portfolio.html">Portfólio</a>
+            <a href="sobre.html">Sobre</a>  
+        </nav>
+    </header>
+    <section class="home no-background">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 home-content">
+                    <h1>Portfólio</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-in">
+                    <div class="card text-bg-dark card-hover">
+                        <a href="sono.html" style="text-decoration: none; color:white;">
+                            <img src="images/sono.png" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Distúrbios do Sono</h5>
+                                <p class="card-text">Usando Machine Learning para prever distúrbios do sono.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Adicione mais cards aqui conforme necessário -->
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2400, // Duração da animação em milissegundos
+        });
+    </script>
+</body>
+</html>

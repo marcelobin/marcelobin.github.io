@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marcelo Bin - Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="icon" href="images/logo_marcelo.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Marcelo Bin.</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfólio</a>
+            <a href="sobre.html">Sobre</a>  
+        </nav>
+    </header>
+
+    <section class="home no-background">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 home-content">
+                    <h1>Personalização de Prêmios de Seguro com Base na Qualidade do Sono</h1>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h2>Características do Projeto</h2>
+                    <p>Este projeto aborda o desafio de personalizar prêmios de seguro saúde com base na qualidade do sono dos clientes. A ideia é utilizar dados de saúde, incluindo métricas de sono, para criar um modelo preditivo que avalie o risco individual de cada cliente e ajuste o prêmio de acordo.</p>
+                    <p>O projeto foi estruturado em três sprints:</p>
+                    <ol>
+                        <li>Preparação dos dados: coleta, limpeza e análise exploratória.</li>
+                        <li>Desenvolvimento do modelo: seleção e treinamento de algoritmos de classificação.</li>
+                        <li>Integração e testes: integração do modelo ao sistema da seguradora e validação.</li>
+                    </ol>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <h2>Técnicas Utilizadas</h2>
+                    <ul>
+                        <li>Linguagem Python para análise e modelagem.</li>
+                        <li>Bibliotecas Pandas e Scikit-learn para manipulação de dados e machine learning.</li>
+                        <li>Modelos de Machine Learning: Random Forest, Decision Tree e Regressão Logística.</li>
+                        <li>Métricas de avaliação: Acurácia, Precisão, Recall, F1-Score, AUC-ROC e Matriz de Confusão.</li>
+                        <li>Validação cruzada para otimização de hiperparâmetros e evitar overfitting.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12" data-aos="fade-right">
+                    <h3>Gráfico: Resultados</h3>
+                    <img src="images/sono - matrix de confusao.png" alt="Gráfico de Idade" class="img-fluid">
+                </div>
+                
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12" data-aos="fade-up">
+                    <h2>Resultados</h2>
+                    <ul>
+                        <li>O modelo de Regressão Logística apresentou a melhor performance, com 95% de acurácia.</li>
+                        <li>Implantação de um modelo inovador para precificação de prêmios de seguro.</li>
+                        <li>Possibilidade de oferecer prêmios personalizados aos clientes, melhorando sua experiência.</li>
+                        <li>Contribuição para a conscientização sobre a importância da qualidade do sono na saúde.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        AOS.init({
+            duration: 1200, // Duração da animação em milissegundos
+        });
+    </script>
+</body>
+</html>
