@@ -51,7 +51,6 @@ body {
     text-decoration: none;
 }
 
-
 .logo::before{
     content: '';
     position: absolute;
@@ -85,12 +84,35 @@ body {
 
 .home {
     height: 100vh;
-    background: url('images/fundo.png') no-repeat;
-    background-size: cover;
-    background-position: no-repeat center;
     display: flex;
     align-items: center;
     padding: 0 10%;
+}
+
+.home-image {
+    width:20%;
+    height: auto;
+    margin-right: 10px; /* Ajuste conforme necessário */
+    position: absolute;
+    right: 10%; /* Ajuste conforme necessário */
+    top: 30%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    animation: float 3s ease-in-out infinite;
+
+}
+
+.home-image:hover {
+    filter: brightness(0.5);
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 .home.no-background {
