@@ -333,6 +333,34 @@ body {
     color: #081b29;
 }
 
+.home-sci-btn {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.home-sci-btn a:hover {
+    color: #00abf0;
+    text-decoration: none;
+}
+
+.home-sci-btn a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff; /* Cor do botão */
+    border-radius: 5px;
+    transition: background-color 1s ease;
+}
+
+.home-sci-btn a:hover {
+    color: #081b29;
+    background-color: #ffffff;
+    transition: 1s ease;
+}
+
 .home-imgHover{
     position: absolute;
     top: 0;
@@ -363,6 +391,12 @@ body {
     animation: showRight 1s ease forwards;
     animation-delay:3s;
     z-index: 100;
+}
+
+.card {
+    border: none !important;
+    background: transparent;
+    box-shadow: #424242 0px 2px 4px;
 }
 
 .card-text {
