@@ -80,6 +80,7 @@ body {
 .navbar a:hover,
 .navbar a.active {
     color: #00abf0;
+    text-decoration: none;
 }
 
 .home {
@@ -518,3 +519,4 @@ body {
         pointer-events: auto;
     }
 }
+
