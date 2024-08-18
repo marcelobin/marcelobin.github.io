@@ -520,3 +520,7 @@ body {
     }
 }
 
+/* Estilo para aumentar a tabulação dos itens de lista */
+.indented-list {
+    padding-left: 40px; /* Ajuste o valor conforme necessário */
+}

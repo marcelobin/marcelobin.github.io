@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Marcelo Bin - Portfólio</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+        <script src="https://kit.fontawesome.com/b075869b72.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="images/logo_marcelo.png" type="image/x-icon">
+    </head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Marcelo Bin.</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfólio</a>
+            <a href="sobre.html" class="active">Sobre</a>  
+        </nav>
+    </header>
+
+    <section class="home no-background">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 home-content">
+                    <h1>Cyclistic Bike-Share Analysis</h1>
+                </div>
+            </div>
+            <div class="home-sci-btn text-center">
+                <a href = "https://github.com/marcelobin/Cyclistic" target="_blank">Acessar o Projeto</a>
+                <a href = "portfolio.html">Voltar ao Portfólio</a>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12" data-aos="fade-right">
+                    <h2>Características do Projeto</h2>
+                    <p>Este projeto tem como objetivo analisar dados históricos de viagens da Cyclistic, uma empresa fictícia de compartilhamento de bicicletas em Chicago, para entender como os usuários casuais e membros anuais utilizam o serviço de forma diferente. O objetivo final é fornecer insights para a equipe de marketing da Cyclistic, permitindo que eles desenvolvam estratégias eficazes para converter usuários casuais em membros anuais.</p>
+                </div>
+                <div class="col-md-12" data-aos="fade-left">
+                    <h2>Contexto do Negócio</h2>
+                    <p>A Cyclistic oferece diversos planos de assinatura, incluindo passes de viagem única e passes de um dia (usuários casuais) e planos anuais (membros). A empresa busca aumentar a receita, focando na conversão de usuários casuais em membros anuais, que são mais lucrativos.</p>
+
+                    <p>Os dados para este projeto estão disponibilizados na página <a href="https://divvy-tripdata.s3.amazonaws.com/index.html">https://divvy-tripdata.s3.amazonaws.com/index.html</a></p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12" data-aos="fade-right">
+                    <h2>Análise de Dados</h2>
+                    <p>O projeto utiliza dados históricos de viagens da Cyclistic, incluindo informações como tipo de bicicleta, data e hora de início e fim da viagem, nome e ID da estação, latitude e longitude, e tipo de usuário (casual ou membro). A análise inclui: </p>
+                    <ulclass="indented-list">
+                        <li><strong>Importação e limpeza dos dados:</strong> Os dados são carregados, combinados em um único DataFrame e limpos, removendo duplicatas e valores ausentes.</li>
+                        <li><strong>Criação de novas features:</strong> São criadas colunas para o dia da semana, duração da viagem e distância percorrida.</li>
+                        <li><strong>Tratamento de outliers:</strong> Outliers são identificados e removidos para garantir a qualidade da análise.</li>
+                        <li><strong>Análise exploratória de dados (EDA):</strong> A EDA é realizada para entender as características dos dados e identificar padrões de uso entre usuários casuais e membros.</li>
+                        <li><strong>Visualizações e Insights:</strong> O projeto inclui diversas visualizações para apresentar os resultados da análise, como gráficos de barras, histogramas e mapas. Os insights gerados podem ajudar a equipe de marketing a entender:</li>
+                        <ul class="indented-list">
+                            <li>Diferenças no comportamento de uso entre membros anuais e usuários casuais (dias da semana, horários, duração das viagens, distância percorrida, tipo de bicicleta, etc.).</li>
+                            <li>Padrões de uso das estações, identificando as mais populares e as menos utilizadas.</li>
+                            <li>Distribuição geográfica das viagens, visualizando as áreas da cidade com maior e menor demanda.</li>
+                        </ul>
+                    </ul>
+                </div>
+
+                <div class="col-md-12" data-aos="fade-right" style="padding-bottom: 50px;">
+                    <h3>Top 10 estações mais populares</h3>
+                    <img src="images/top_10_estacoes.png" alt="Gráfico Estações" class="img-fluid">
+                </div>
+                <div class="col-md-6" data-aos="fade-right" style="padding-bottom: 50px;">
+                    <h3>Distribuição de Duração de Viagens</h3>
+                    <img src="images/distribuicao_duracao_viagens.png" alt="Gráfico duração" class="img-fluid">
+                </div>
+                <div class="col-md-6" data-aos="fade-left" style="padding-bottom: 50px;">
+                    <h3>Distribuição de Viagens dia semana</h3>
+                    <img src="images/distribuicao_viagens_dia_semana.png" alt="Gráfico viagens semana" class="img-fluid">
+                </div>
+                <div class="col-md-6" data-aos="fade-right" style="padding-bottom: 50px;">
+                    <h3>Distribuição de Viagens por horário</h3>
+                    <img src="images/distribuicao_viagens_por_horario.png" alt="Gráfico viagens horário" class="img-fluid">
+                </div>
+                <div class="col-md-6" data-aos="fade-left" style="padding-bottom: 50px;">
+                    <h3>Distância Média percorrida</h3>
+                    <img src="images/distancia_media_percorrida.png" alt="Gráfico distancia percorrida" class="img-fluid">
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-12" data-aos="fade-right">
+                        <h2>Conclusões</h2>
+                        <p>1. Como os membros anuais e os ciclistas casuais usam as bicicletas da Cyclistic de forma diferente?</p>
+                        <p>A análise dos dados revelou diferenças significativas nos padrões de uso entre membros anuais e passageiros casuais:</p>
+                        <ul class="indented-list">
+                            <li><strong>Frequência de Uso:</strong> Membros anuais tendem a usar as bicicletas de forma mais consistente ao longo da semana, especialmente durante os dias úteis, sugerindo que muitos utilizam as bicicletas para deslocamentos diários, como ir ao trabalho. Em contraste, passageiros casuais utilizam as bicicletas principalmente nos finais de semana e feriados, indicando um uso mais recreativo.</li>
+                            <li><strong>Duração das Viagens:</strong> As viagens dos membros anuais são geralmente mais curtas em comparação com as dos passageiros casuais. Isso reforça a ideia de que membros anuais utilizam as bicicletas para deslocamentos rápidos e frequentes.</li>
+                            <li><strong>Horário de Uso:</strong> Membros anuais tendem a usar as bicicletas durante os horários de pico (manhã e tarde), enquanto passageiros casuais têm um uso mais distribuído ao longo do dia.</li>
+                        </ul>
+                        <p>2. Por que os passageiros casuais iriam adquirir planos anuais da Cyclistic?</p>
+                        <p>Com base na análise, podemos identificar várias razões pelas quais passageiros casuais poderiam ser incentivados a adquirir planos anuais:</p>
+                        <ul class="indented-list">
+                            <li><strong>Economia:</strong> Para passageiros casuais que utilizam as bicicletas com frequência, um plano anual pode ser mais econômico a longo prazo em comparação com a compra de passes diários ou de viagem única.</li>
+                            <li><strong>Comodidade:</strong> Membros anuais têm a conveniência de não precisar se preocupar com a compra de passes a cada uso, tornando o processo de utilização das bicicletas mais simples e rápido.</li>
+                            <li><strong>Benefícios Adicionais:</strong> A Cyclistic pode oferecer benefícios exclusivos para membros anuais, como descontos em eventos locais, acesso prioritário a novas bicicletas e estações, e suporte ao cliente dedicado.</li>
+                        </ul>
+                        <p>3. Como a Cyclistic pode usar a mídia digital para influenciar os passageiros casuais a se tornarem membros?</p>
+                        <p>A Cyclistic pode utilizar várias estratégias de mídia digital para converter passageiros casuais em membros anuais:</p>
+                        <ul class="indented-list">
+                            <li><strong>Campanhas de E-mail Marketing:</strong> Enviar e-mails personalizados destacando os benefícios de se tornar um membro anual, incluindo comparações de custo e histórias de sucesso de outros membros.</li>
+                            <li><strong>Redes Sociais:</strong> Utilizar plataformas de redes sociais para promover os benefícios dos planos anuais, compartilhar depoimentos de usuários e oferecer promoções exclusivas para seguidores.</li>
+                            <li><strong>Publicidade Online:</strong> Investir em anúncios direcionados no Google e em redes sociais para alcançar passageiros casuais com mensagens personalizadas baseadas em seu comportamento de uso.</li>
+                            <li><strong>Aplicativo Móvel:</strong> Utilizar notificações push no aplicativo da Cyclistic para lembrar os passageiros casuais dos benefícios de se tornarem membros anuais, especialmente após uma viagem recente.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-12" data-aos="fade-right">
+                        <h2>Recomendações</h2>
+                        <p>Os resultados da análise de dados da Cyclistic fornecem insights valiosos para a equipe de marketing da empresa. Algumas recomendações incluem:</p>
+                        <ul class="indented-list">
+                            <li>Desenvolver campanhas de marketing direcionadas para usuários casuais, com base em seus padrões de uso.</li>
+                            <li>Oferecer incentivos ou promoções para encorajar a conversão para planos anuais.</li>
+                            <li>Ajustar a distribuição das bicicletas nas estações para atender à demanda em diferentes regiões da cidade.</li>
+                            <li>Melhorar a comunicação sobre os benefícios dos planos anuais para os usuários casuais.</li>
+                        </ul>
+                    </div>
+
+              
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        AOS.init({
+            duration: 1200, // Duração da animação em milissegundos
+        });
+    </script>
+</body>
+</html>
