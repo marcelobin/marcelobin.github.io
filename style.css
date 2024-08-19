@@ -524,3 +524,9 @@ body {
 .indented-list {
     padding-left: 40px; /* Ajuste o valor conforme necessário */
 }
+
+.counter-right {
+    display: block;
+    text-align: right;
+    margin-right: 10px; /* Ajuste conforme necessário */
+}
