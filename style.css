@@ -398,6 +398,8 @@ body {
     border: none !important;
     background: transparent;
     box-shadow: #424242 0px 2px 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .card-text {
@@ -525,8 +527,82 @@ body {
     padding-left: 40px; /* Ajuste o valor conforme necessário */
 }
 
-.counter-right {
-    display: block;
-    text-align: right;
-    margin-right: 10px; /* Ajuste conforme necessário */
+
+footer {
+    position: fixed; /* Altere de fixed para relative */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #081b29;
+    color: #ededed;
+    text-align: center;
+    padding: 20px 10%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones */
+    width: auto; /* Remova a largura fixa */
+}
+
+.footer-icons a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #00abf0;
+    border-radius: 50%;
+    font-size: 28px;
+    color: #ededed;
+    text-decoration: none;
+    transition: .5s ease;
+    text-align: center;
+    margin: 0 10px; /* Adicione margem para espaçamento */
+}
+
+.footer-icons a:hover {
+    color: #00abf0;
+    text-decoration: none;
+}
+
+.footer-icons a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: 0.5s;
+    transform: scale(0);
+    border-radius: 50%;
+}
+
+.footer-icons a:hover::before {
+    width: 100%;
+    transform: scale(1);
+}
+
+.footer-icons a:hover {
+    color: #081b29;
+}
+
+#sobre {
+    padding-bottom: 500px !important;
+}
+
+.portfolio-title{
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #00abf0 !important;
 }

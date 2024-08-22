@@ -1,51 +1,217 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Marcelo Bin - Portfólio</title>
-        <link rel="stylesheet" href="style.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-        <script src="https://kit.fontawesome.com/b075869b72.js" crossorigin="anonymous"></script>
-        <link rel="icon" href="images/logo_marcelo.png" type="image/x-icon">
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2MNNM2J6KS"></script>
-            <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-2MNNM2J6KS');
-            </script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marcelo Bin - Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://kit.fontawesome.com/b075869b72.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/logo_marcelo.png" type="image/x-icon">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2MNNM2J6KS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2MNNM2J6KS');
+    </script>
+</head>
 <body>
     <header class="header">
         <a href="#" class="logo">Marcelo Bin.</a>
         <nav class="navbar">
-            <a href="index.html" class="active">Home</a>
-            <a href="portfolio.html">Portfólio</a>
-            <a href="sobre.html">Sobre</a>            
+            <a href="#home" class="active">Home</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#sobre">Sobre</a>            
         </nav>
     </header>
-    <section class="home">
+    <section id="home" class="home">
         <div class="home-content">
-            <h1>Olá, Eu sou Marcelo Bin</h1>
+            <h1 class=data-aos="fade-up">Olá, Eu sou Marcelo Bin</h1>
             <h3>Cientista de Dados</h3>
             <p>Olá, sou Marcelo Bin e um entusiasta de Ciência de Dados, atualmente cursando graduação na FIAP.
             Estou sempre buscando aprimorar minhas habilidades e me manter atualizado com as últimas tendências.
             Este site reflete minha jornada de aprendizado e serve como um portfólio de meus projetos e habilidades.</p>
         </div>
-        <div class="home-sci">
-            <a href="mailto:marcelo.bin@hotmail.com" target="_blank"><i class='bx bx-mail-send'></i></a>
-            <a href="https://github.com/marcelobin" target="_blank"><i class='bx bxl-github' ></i></a>
-            <a href="https://www.linkedin.com/in/marcelo-bin/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-        </div>
         <img src="images/globo.png" alt="Globo" class="home-image">
-
     </section>
 
+    <!-- Nova seção de Portfólio -->
+    <section id="portfolio" class="home no-background">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 home-content">
+                    <h1>Portfólio</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <a href="cyclistic.html" style="text-decoration: none; color:white;">
+                    <h3 class="portfolio-title card-hover">Cyclistic Bike-Share Analysis</h3>
+                    <div class="card text-bg-dark card-hover">
+
+                            <img src="images/card_cyclistic.png" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                                <p class="card-text">Análise de dados de compartilhamento de bicicletas em Chivago.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-aos="fade-left">
+                    <a href="sono.html" style="text-decoration: none; color:white;">
+                    <h3 class="portfolio-title card-hover">Distúrbios do Sono</h3>
+                    <div class="card text-bg-dark card-hover">
+                        <img src="images/sono.png" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                             <p class="card-text">Usando Machine Learning para prever distúrbios do sono.</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+                <!-- Adicione mais cards aqui conforme necessário -->
+            
+            
+
+
+        </div>
+    </section>
+
+    <section id="sobre" class="home no-background" style="margin-bottom: 100px;">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 home-content" data-aos="fade-up">
+                    <h1>Sobre Mim</h1>
+                </div>
+            </div>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-4" data-aos="fade-right">
+                        <h2 class="curriculo-title">Marcelo Bin</h2>
+                        <h4 class="curriculo-subtitle">Cientista de Dados</h4>
+                        <p class="curriculo-text">Campo Grande - MS</p>
+                        <p class="curriculo-text">(55) 65 98120-0350</p>
+                        <p class="curriculo-text">marcelo.bin@hotmail.com</p>
+                        <div class="home-sci-btn" style="text-align: left; font-size: 24px;">
+                            <a href="mailto:marcelo.bin@hotmail.com" target="_blank"><i class='bx bx-mail-send'></i></a>
+                            <a href="https://github.com/marcelobin" target="_blank"><i class='bx bxl-github' ></i></a>
+                            <a href="https://www.linkedin.com/in/marcelo-bin/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                        </div>
+                        <h2 class="curriculo-title">Cursos Extras</h2>
+                        <ul class="curriculo-list">
+                            <li><i class="fas fa-certificate"></i> Data Science Professional Certificate - Coursera - IBM (fev./23)</li>
+                            <li><i class="fas fa-certificate"></i> Certificado Profissional de Análise de Dados do Google - Coursera - Google (jul./22)</li>
+                            <li><i class="fas fa-certificate"></i> Python para Data Science - Alura (jan./22)</li>
+                            <li><i class="fas fa-certificate"></i> Formação - Python - Alura (out/20)</li>
+                        </ul>
+                        <h2 class="curriculo-title">Habilidades</h2>
+                        <ul class="curriculo-list">
+                            <li><i class="fa-brands fa-python"></i> Python</li>
+                            <li><i class="fa-solid fa-database"></i> SQL</li>
+                            <li><i class="fa-solid fa-chart-line"></i> Scikit-learn</li>
+                            <li><i class="fa-solid fa-chart-bar"></i> Tableau</li>
+                            <li><i class="fa-solid fa-chart-pie"></i> Power BI</li>
+                            <li><i class="fa-solid fa-magnifying-glass-chart"></i> EDA</li>
+                        </ul>
+                        <h2 class="curriculo-title">Idiomas</h2>
+                        <ul class="curriculo-list">
+                            <li>Inglês - Intermediário</li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-8" data-aos="fade-left">
+                        <h2 class="curriculo-title">Resumo Profissional</h2>
+                        <p class="curriculo-text">Possuo aproximadamente três anos de experiência em análise de dados e sou graduado em Tecnologia em Processos Gerenciais, com Especialização/BootCamp em Data Science Aplicada pela Alura, MBA em Ciência de Dados pela XPE e graduando em Ciência de Dados na FIAP.</p>
+                        <p class="curriculo-text">Tenho habilidades em análise de dados e visualização de informações utilizando ferramentas como Python, SQL, Tableau e Power BI. Ao longo de minha carreira, desenvolvi habilidades em gestão de pessoas, negociação, atendimento ao cliente, resolução de problemas, entre outras.</p>
+                        <h2 class="curriculo-title">Formação</h2>
+                        <div class="timeline">
+                            <div class="timeline-item" data-aos="fade-up">
+                                <h4 class="curriculo-subtitle">FIAP / DATA SCIENCE</h4>
+                                <p class="curriculo-text">FEVEREIRO DE 2024 - CURSANDO</p>
+                            </div>
+                            <div class="timeline-item" data-aos="fade-up">
+                                <h4 class="curriculo-subtitle">XPE / MBA em Ciência de Dados</h4>
+                                <p class="curriculo-text">MARÇO DE 2023 - DEZEMBRO DE 2023, Uberlândia - MG</p>
+                                <p class="curriculo-text">Especialização na área de Big Data e Dados.</p>
+                            </div>
+                            <div class="timeline-item" data-aos="fade-up">
+                                <h4 class="curriculo-subtitle">Anhanguera UNIDERP / Tecnólogo em Processos Gerenciais</h4>
+                                <p class="curriculo-text">JANEIRO DE 2013 - DEZEMBRO DE 2015, Dourados-MS</p>
+                                <p class="curriculo-text">Durante a formação aprendi a analisar e desenvolver estratégias de negócio, gerenciar projetos, liderar equipes e tomar decisões estratégicas.</p>
+                            </div>
+                        </div>
+                        <h2 class="curriculo-title">Experiência</h2>
+                        <div class="timeline">
+                            <div class="timeline-item" data-aos="fade-up">
+                                <h4 class="curriculo-subtitle">MS Financiamentos / Analista de Dados</h4>
+                                <p class="curriculo-text">DESDE DE JANEIRO DE 2021, CAMPO GRANDE - REMOTO</p>
+                                <ul class="curriculo-list">
+                                    <li>Análise de dados para gerar insights para o negócio.</li>
+                                    <li>Utilização SQL e Python (Pandas e Numpy) para consultas e tratamentos em Banco de Dados.</li>
+                                    <li>Criação de Dashboards interativos utilizando o Plotly e Dash para auxiliar em análises gerenciais, além de relatórios com gráficos gerados a partir do Matplotlib e Seaborn.</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-item" data-aos="fade-up">
+                                <h4 class="curriculo-subtitle">UNICRED MT / Gerente de Relacionamento</h4>
+                                <p class="curriculo-text">MAIO DE 2018 - OUTUBRO DE 2020, CUIABÁ - MT</p>
+                                <ul class="curriculo-list">
+                                    <li>Gerenciamento de carteira de aproximadamente 500 clientes PF e PJ, onde pude desenvolver e aplicar técnicas comerciais, negociação e relacionamento com clientes. Analisando e entendendo as necessidades de cada cliente para apresentar a melhor solução financeira para seu momento.</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-item" data-aos="fade-up">
+                                <h4 class="curriculo-subtitle">Delta Negócios e Soluções / Gerente de Filial</h4>
+                                <p class="curriculo-text">JULHO DE 2008 - DEZEMBRO DE 2017, DOURADOS-MS</p>
+                                <ul class="curriculo-list">
+                                    <li>Gestão comercial e administrativa de empresa correspondente bancário. Nesse período desenvolvi habilidades como Negociação, Gestão de Pessoas e Empreendedorismo, sempre com visão de gerar valor ao negócio.</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-item" data-aos="fade-up">
+                                <h4 class="curriculo-subtitle">Banco ABN AMRO Real SA / Subgerente</h4>
+                                <p class="curriculo-text">MARÇO DE 2001 - JUNHO DE 2008, CUIABÁ-MT</p>
+                                <ul class="curriculo-list" style="margin-bottom: 100px">
+                                    <li>Empresa onde tive oportunidade de iniciar minha atividade profissional e me proporcionou grandes aprendizados. Nela exerci tanto cargos administrativos, (que me proporcionou desenvolver habilidades de controle e gerenciamento), quanto cargos comerciais, voltado ao relacionamento, trabalho em equipe e vendas.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 footer-icons">
+                        <a href="mailto:marcelo.bin@hotmail.com" target="_blank"><i class='bx bx-mail-send'></i></a>
+                        <a href="https://github.com/marcelobin" target="_blank"><i class='bx bxl-github' ></i></a>
+                        <a href="https://www.linkedin.com/in/marcelo-bin/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200, // Duração da animação em milissegundos
+        });
+    </script>
 </body>
 </html>
