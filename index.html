@@ -13,7 +13,10 @@
     <!-- Navbar -->
     <header class="header">
         <a href="#" class="logo">Marcelo Bin</a>
-        <nav class="navbar">
+        <div class="menu-toggle" id="menu-toggle">
+            <i class='bx bx-menu'></i> <!-- Ícone de menu -->
+        </div>
+        <nav class="navbar" id="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#portfolio">Projetos</a>
             <a href="#about">Sobre</a>
@@ -21,6 +24,7 @@
             <a href="#contact">Contato</a>
         </nav>
     </header>
+
 
     <!-- Home Section -->
     <section id="home" class="home">
@@ -176,15 +180,25 @@
         <p>&copy; 2024 Marcelo Bin. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Script para Menu Responsivo e Rolagem Suave -->
     <script>
+        // Alternar o menu responsivo
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbar = document.getElementById('navbar');
+
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('show');
+        });
+
+        // Rolagem suave e fechamento do menu
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
-                e.preventDefault(); // Evita o comportamento padrão do navegador
-    
+                e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 target.scrollIntoView({
-                    behavior: 'smooth' // Ativa a rolagem suave
+                    behavior: 'smooth'
                 });
+                navbar.classList.remove('show'); // Fecha o menu após o clique
             });
         });
     </script>
